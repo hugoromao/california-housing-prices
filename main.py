@@ -15,6 +15,7 @@ def predict():
     data = request.get_json(force=True)
     input_features = np.array(data['features'])
     dp = pd.DataFrame([input_features], columns=strata_test_set.columns.tolist())
+    print(dp.columns.tolist())
     predictions = final_model_reloaded.predict(dp)
     return jsonify({"prediction": predictions.tolist()[0]})
 
