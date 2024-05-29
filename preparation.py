@@ -28,7 +28,6 @@ housing_train["people_per_house"] = housing_train["population"] / housing_train[
 housing_train = strata_train_set.drop("median_house_value", axis=1)
 housing_train_labels = strata_train_set["median_house_value"].copy()
 
-
 def column_ratio(X):
     return X[:, [0]] / X[:, [1]]
 
