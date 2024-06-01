@@ -4,9 +4,9 @@ import { NextUIProvider } from "@nextui-org/react";
 
 import "./globals.css";
 
-export const inter = Inter({ subsets: ["latin"], variable: '--font-inter', display: 'swap', });
+const inter = Inter({ subsets: ["latin"], variable: '--font-inter', display: 'swap', });
 
-export const lora = Lora({
+const lora = Lora({
   subsets: ['latin'], variable: '--font-lora', display: 'swap',
 })
 
