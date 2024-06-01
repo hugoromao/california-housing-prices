@@ -55,13 +55,6 @@ const CaliforniaMap = ({ onSetMarker }: CaliforniaMapProps) => {
   };
   return (
     <>
-      <Image
-        src="/logo.png"
-        width={436}
-        height={60}
-        alt="California housing prices"
-        className="z-20 absolute top-0"
-      />
       <Map
         cursor="default"
         dragPan={false}
@@ -69,13 +62,13 @@ const CaliforniaMap = ({ onSetMarker }: CaliforniaMapProps) => {
         doubleClickZoom={false}
         mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
         initialViewState={{
-          longitude: -115.417931,
-          latitude: 37.778259,
-          zoom: 5.4,
+          longitude: -119.417931,
+          latitude: 36.978259,
+          zoom: 4.1,
         }}
         onClick={handleClick}
         onLoad={() => setIsMapLoaded(true)}
-        style={{ height: "100vh" }}
+        style={{ width: '100%', height:'50vh' }}
         mapStyle="mapbox://styles/mapbox/standard"
       >
         {marker ? (
