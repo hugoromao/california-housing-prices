@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 
 from preparation import strata_test_set
 
-final_model_reloaded = joblib.load("./api/california_housing_model.pkl")
+final_model_reloaded = joblib.load("./api/model.pkl")
 
 app = Flask(__name__)
 
