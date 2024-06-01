@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import {
@@ -96,26 +98,29 @@ export default function Home() {
     <main className="flex flex-col px-4 py-6 max-w-2xl mx-auto gap-4">
       <section className="flex flex-col gap-2">
         <h1 className="text-3xl font-bold">California Housing Prices</h1>
-        <p>A regression model to predict the median house prices for California districts derived from the 1990 census.</p>
+        <p>
+          A regression model to predict the median house prices for California
+          districts derived from the 1990 census.
+        </p>
       </section>
 
       <section className="flex flex-col gap-2">
         <h2>Context</h2>
-        <p>This is the project developed in the second chapter of Aurélien Géron's recent book <em>'Hands-On Machine learning with Scikit-Learn and TensorFlow'</em>.</p>
+        <p>
+          This is the project developed in the second chapter of Aurélien
+          Géron's recent book{" "}
+          <em>'Hands-On Machine learning with Scikit-Learn and TensorFlow'</em>.
+        </p>
       </section>
 
       <section className="flex flex-col gap-2">
         <h2 className="mb-2">Project pipeline</h2>
-        <img src='/pipeline.png' />
+        <img src="/pipeline.png" alt="Project pipeline" />
       </section>
-
 
       <section className="flex flex-col gap-2 ">
         <h2 className="mb-4">Try on-line</h2>
-        <form
-          className="flex flex-col gap-2"
-          onSubmit={handleSubmit(onSubmit)}
-        >
+        <form className="flex flex-col gap-2" onSubmit={handleSubmit(onSubmit)}>
           <CaliforniaMap onSetMarker={onSetMarker} />
           <p className="mb-4 text-gray-400 text-sm">
             *Click on the map to select a location.
@@ -202,7 +207,6 @@ export default function Home() {
         ) : null}
       </section>
 
-
       <section className="flex flex-col gap-2">
         <h2>Evaluation</h2>
         <Card>
@@ -211,7 +215,7 @@ export default function Home() {
             <code>41549.20158097943</code>
           </CardBody>
         </Card>
-      </section >
+      </section>
     </main>
   );
 }

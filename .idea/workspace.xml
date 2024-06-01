@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15386193-aebb-4093-a15b-1eb33d91b335" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/california-housing-prices.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/california-housing-prices.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/components/Map/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/components/Map/index.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="15386193-aebb-4093-a15b-1eb33d91b335" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,7 +59,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-48aec45f0201-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.17011.127" />
+        <option value="bundled-python-sdk-babbdf50b680-746f403e7f0c-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-241.15989.155" />
       </set>
     </attachedChunks>
   </component>
