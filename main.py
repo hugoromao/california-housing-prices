@@ -2,15 +2,16 @@ import joblib
 import numpy as np
 import pandas as pd
 from flask import Flask, request, jsonify
-from flask_cors import CORS
 
 from preparation import strata_test_set
 
 final_model_reloaded = joblib.load("california_housing_model.pkl")
 
 app = Flask(__name__)
-CORS(app)
 
+@app.route("/")
+def hello_world():
+    return "<p>Hello, World!</p>"
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -21,5 +22,7 @@ def predict():
     return jsonify({"prediction": predictions.tolist()[0]})
 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=8080)
+
