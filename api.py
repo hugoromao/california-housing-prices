@@ -6,14 +6,16 @@ from flask_cors import CORS
 
 from preparation import strata_test_set
 
+gdown.download("https://drive.google.com/uc?export=download&id=1-x7_xFR2u2J39c-acnhZ1u4Xz6fv_fpS", "california_housing_model.pkl", quiet=False)
+
 final_model_reloaded = joblib.load("california_housing_model.pkl")
 
 app = Flask(__name__)
 CORS(app)
 
 @app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
+def hw():
+    return "Hugo Romão California housing price regressor"
 
 @app.route('/predict', methods=['POST'])
 def predict():
